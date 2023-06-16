@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="width=z, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/stylecss.css')}}">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <!--<script src="js/admin-script.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- multistep form -->
+<form id="msform">
+    <!-- progressbar -->
+    <ul id="progressbar">
+      <li class="active">saiser les données</li>
+      <li>saiser les données</li>
+      <li>ensemble des coup</li>
+
+    </ul>
+    <!--************** form 1 *************-->
+    <fieldset>
+      <h2 class="fs-title">saisez les données</h2>
+      <h3 class="fs-subtitle">étape 1</h3>
+      <input id="element" type="number" placeholder="nombres des éléments">
+      <input id="ensemble" type="number" placeholder="nombres des ensembles">
+      <input type="button" name="next" id="form_1" class="next action-button" value="Next" />
+    </fieldset>
+    <!--************** form 2 *************-->
+    <fieldset class="second-field">
+      <h2 class="fs-title">saisez les nombres</h2>
+      <h3 class="fs-subtitle">étape 2</h3>
+      <div id="matrice" class="container">
+          <!--<div id="matrice" class="container-line">
+        <input type="text" placeholder="ensemble" class="btr-txt">
+        <input type="number" placeholder="nbr" class="btr">
+        <input type="number" placeholder="nbr" class="btr">
+        </div>
+          <div id="matrice" class="container-line">
+        <input type="text" placeholder="ensemble" class="btr-txt">
+        <input type="number" placeholder="nbr" class="btr">
+        <input type="number" placeholder="nbr" class="btr">
+          </div>
+        <div id="matrice" class="container-line">
+        <input type="text" placeholder="ensemble" class="btr-txt">
+        <input type="number" placeholder="nbr" class="btr">
+        <input type="number" placeholder="nbr" class="btr">
+        </div>
+          <div id="matrice" class="container-line">
+        <input type="text" placeholder="ensemble" class="btr-txt">
+        <input type="number" placeholder="nbr" class="btr">
+        <input type="number" placeholder="nbr" class="btr">
+          </div>
+        <div id="matrice" class="container-line">
+        <input type="text" placeholder="ensemble" class="btr-txt">
+        <input type="number" placeholder="nbr" class="btr">
+        <input type="number" placeholder="nbr" class="btr">
+        </div>-->
+      </div>
+
+        <input type="button" name="previous" class="previous action-button" value="Previous" />
+        <input type="button" name="next" class="next action-button" value="Next" />
+        <!--<input type="file" class="special-input">-->
+
+    </fieldset>
+    <!--************** form 3 *************-->
+    <fieldset class="second-field">
+      <h2 class="fs-title">ensembles des coups</h2>
+      <h3 class="fs-subtitle">étape 3</h3>
+        <div id="cout" class="container">
+      <!--<div id="cout" class="container-line">
+         <input type="text" value="ensemble des couts " placeholder="ensemble" class="btr-txt">
+        <input type="number" placeholder="nbr" class="btr">
+        <input type="number" placeholder="nbr" class="btr">
+        <input type="number" placeholder="nbr" class="btr">
+        <input type="number" placeholder="nbr" class="btr">
+        <input type="number" placeholder="nbr" class="btr">
+        <input type="number" placeholder="nbr" class="btr">
+        <input type="number" placeholder="nbr" class="btr">
+        <input type="number" placeholder="nbr" class="btr">
+        <input type="number" placeholder="nbr" class="btr">
+        <input type="number" placeholder="nbr" class="btr">
+        <input type="number" placeholder="nbr" class="btr">
+        <input type="number" placeholder="nbr" class="btr">
+        <input type="number" placeholder="nbr" class="btr">
+        <input type="number" placeholder="nbr" class="btr">-->
+      </div>
+      <input type="button" name="previous" class="previous action-button" value="Previous" />
+      <input type="submit" name="next" class="next action-button" value="resulat" />
+    </fieldset>
+
+    </form>
+    <script src="{{url_for('static',filename='js/localisation_get.js')}}"></script>
+    <script src="{{url_for('static',filename='js/localisation_post.js')}}"></script>
+    <script src="{{url_for('static',filename='js/localisation_script.js')}}"></script>
+</body>
+</html>
