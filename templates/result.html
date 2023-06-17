@@ -17,13 +17,13 @@
             <div class="map-container" id="viewDiv"></div>
             <div class="resultat">
                 <h3 class="">resultat</h3>
-                <p>Solution trouvée:{{best_sol}}</p>
+                <p><h2>Les station Sont:</h2> {{best_sol}}</p>
                 {% for v in visual%}
                    <p> {{v|petty}}</p>
                 {% endfor %}
-                <p>Coût de la solution:{{best_cout}}</p>
+                <p>le Coût total de location: {{best_cout}} DA</p>
                 <p>temps d'execution</p>
-                <a href="/" type="button" name="previous" class="action-button" >another operation</a>
+                <a href="/" type="button" name="previous" class="action-button" >réinitialiser</a>
             </div>
         </div>
     </fieldset>

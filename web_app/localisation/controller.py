@@ -37,7 +37,8 @@ def home():
         best_sol,best_cout = grasp(lensemble_C,len_S)
         sol = list(np.where (best_sol == 1)[0]+1)
         #
-        data = normalisation('C:/Users/Yalidine Express/PycharmProjects/saraPFE/static/data/statition.xlsx')
+        #data = normalisation('C:/Users/Yalidine Express/PycharmProjects/saraPFE/static/data/statition.xlsx')
+        data = normalisation('C:/Program Files/localisationBySara-main/static/data/statition.xlsx')
         visual,path = visualisation(sol,data)
         #
         print(path)
